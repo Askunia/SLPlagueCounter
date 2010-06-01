@@ -1,0 +1,6 @@
+## Interface: 30300
+## Title: SLPlagueCounter
+## Notes: Shows you how long you had the Unbound Plague already
+## Author: Askunia - EU Zenedar ( Horde ofc ! )
+
+SLPlagueCounter.lua
