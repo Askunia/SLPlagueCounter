@@ -113,7 +113,6 @@ function SLPlagueCounter:CreateAnchorFrame()
 	local background = anchorFrame:CreateTexture("AnchorFrameBG", "BACKGROUND")
 	background:SetTexture("Interface\\Icons\\Spell_Shadow_CorpseExplode")
 	background:SetAllPoints()
-	print("Anchor Frame created")
 end
 
 function SLPlagueCounter:SaveAnchorPos(anchorFrame, xOffset, yOffset)
@@ -138,7 +137,7 @@ function SLPlagueCounter:SpellApplied(event, timestamp, eventType, srcGuid, srcN
 				-- Create the Frame :)
 				self:CreatePlagueFrame(maxTime)
 			end
-			if (spellID=72855) then -- 10man Heroic Version
+			if (spellID==72855) then -- 10man Heroic Version
 				-- Check if we already have sickness debuff
 				local name, _, _, count = UnitDebuff("player","Plague Sickness")
 				local maxTime = 0
